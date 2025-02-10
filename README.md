@@ -22,7 +22,40 @@ The database used is **SQLite**, ensuring lightweight and efficient storage.
 ✅ **Lightweight SQLite Database**  
 ✅ **Secure and Scalable**  
 
+## **Technologies Used**  
+
+🚀 **Backend:** Django REST Framework (DRF)  
+💾 **Database:** SQLite  
+🛠️ **Admin Panel:** Django Admin  
+🔍 **Search:** Django ORM Queries  
+🔗 **API Development:** RESTful APIs  
+
 ---
 
-## **Project Structure**  
+## **API Endpoints**  
+
+This project provides a **RESTful API** to perform operations on **companies** and **employees**.
+
+### **Company Endpoints**  
+| Method | Endpoint               | Description              |
+|--------|------------------------|--------------------------|
+| GET    | `/api/companies/`       | Retrieve all companies  |
+| POST   | `/api/companies/`       | Create a new company   |
+| GET    | `/api/companies/{id}/`  | Retrieve a specific company |
+| PUT    | `/api/companies/{id}/`  | Update a company |
+| DELETE | `/api/companies/{id}/`  | Delete a company |
+
+### **Employee Endpoints**  
+| Method | Endpoint               | Description              |
+|--------|------------------------|--------------------------|
+| GET    | `/api/employees/`       | Retrieve all employees  |
+| POST   | `/api/employees/`       | Create a new employee   |
+| GET    | `/api/employees/{id}/`  | Retrieve a specific employee |
+| PUT    | `/api/employees/{id}/`  | Update an employee |
+| DELETE | `/api/employees/{id}/`  | Delete an employee |
+
+### **Search Employee by Name**  
+To search for employees by name, use:  
+```sh
+GET /api/employees/?search=<employee_name>
 
